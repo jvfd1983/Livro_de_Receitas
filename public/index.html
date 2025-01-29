@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livro de Receitas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="paginaInicial" class="container">
+        <h1>Livro de Receitas da Jully</h1>
+        <form id="receitaForm">
+            <h2>Adicionar Nova Receita</h2>
+            <label for="nomeReceita">Nome da Receita:</label>
+            <input type="text" id="nomeReceita" required>
+            <label for="ingredientesReceita">Ingredientes (um por linha):</label>
+            <textarea id="ingredientesReceita" required></textarea>
+            <label for="metodoPreparo">Método de Preparação:</label>
+            <textarea id="metodoPreparo" required></textarea>
+            <label for="categoriaReceita">Categoria:</label>
+            <select id="categoriaReceita" required>
+                <option value="Carne">Carne</option>
+                <option value="Peixe">Peixe</option>
+                <option value="Vegetariano">Vegetariano</option>
+            </select>
+            <label for="imagemReceita">Imagem:</label>
+            <input type="file" id="imagemReceita" accept="image/*" required>
+            <button type="submit">Adicionar Receita</button>
+        </form>
+        <div id="listaReceitas" class="receitas-container"></div>
+    </div>
+    <div id="paginaDetalhes" class="container" style="display: none;">
+        <button id="voltarBtn" class="voltar-btn">← Voltar</button>
+        <div id="detalhesReceita"></div>
+    </div>
+    <footer>
+        <p>&copy; <span id="year"></span> João Dias. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

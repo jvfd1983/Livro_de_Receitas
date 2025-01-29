@@ -1,0 +1,167 @@
+:root {
+    --cor-primaria: #FF6F61;
+    --cor-secundaria: #FFD166;
+    --cor-fundo: #FFF8E7;
+    --cor-texto: #333333;
+    --cor-destaque: #06D6A0;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: var(--cor-fundo);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    min-height: 100vh;
+    color: var(--cor-texto);
+}
+
+.container {
+    width: 90%;
+    max-width: 600px; /* Largura máxima do conteúdo */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center; /* Centraliza o texto */
+}
+
+h1 {
+    color: var(--cor-primaria);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: var(--cor-secundaria);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--cor-texto);
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+input[type="text"],
+textarea,
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid var(--cor-primaria);
+    border-radius: 5px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: var(--cor-destaque);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+button:hover {
+    background-color: #05B88B;
+}
+
+.receitas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centraliza os cards */
+}
+
+.receita {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: calc(50% - 20px); /* Dois cards por linha */
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.receita:hover {
+    transform: scale(1.05);
+}
+
+.receita img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.receita h3 {
+    margin: 10px 0 5px;
+    color: var(--cor-primaria);
+    font-size: 1.5rem;
+}
+
+.voltar-btn {
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.voltar-btn:hover {
+    background-color: #E65A50;
+}
+
+#detalhesReceita img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#detalhesReceita {
+    text-align: center;
+}
+
+#detalhesReceita h2 {
+    color: var(--cor-primaria);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#detalhesReceita p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--cor-primaria);
+    color: white;
+    width: 100%;
+    margin-top: auto;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
